@@ -8,7 +8,7 @@ agenda to import.
 - Alarm functionality
 - Visibility for Microsoft and others combined to "visibility"
 - Title, summary and description are all custom but fallback on title.
-- Start date/end data gets the timezone from Laravel config, but can be overwritten if needbe.
+- Start date/end data gets the timezone from Laravel config, but can be overwritten if needed.
 - Set an alarm
 
 ## Streaming
