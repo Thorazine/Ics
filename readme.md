@@ -54,4 +54,4 @@ Options are inserted in the array when creating a new Ics class
 | location | false | string | Any |
 | timezone | false | timezone | Any timezone known to PHP |
 | alarm | false | string | [integer][D or H or M] (M = minute, H = hour, D = Day) |
-| availibility | false | boolean | true = opaque and out of office, false is transparant and free |
+| availibility | false | boolean | true = opaque and out of office, false = transparant and free |
