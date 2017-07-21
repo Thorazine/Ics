@@ -1,0 +1,13 @@
+{
+    "name": "thorazine/ics",
+    "description": "An ical file maker",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matthijs Openneer",
+            "email": "noreply@matthijs.openneer.com"
+        }
+    ],
+    "require": {}
+}
