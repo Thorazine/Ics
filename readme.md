@@ -44,14 +44,14 @@ file_put_contents('some-filename.ics', $ical->get());
 ## Options
 Options are inserted in the array when creating a new Ics class
 
-| key | Mandatory | Possible values |
-| --- | --- | --- |
-| title | true | string |
-| startDate | true | Any timestamp as excepted by strtotime() |
-| endDate | true | Any timestamp as excepted by strtotime() |
-| summary | false | string |
-| description | false | string (/n for new line) |
-| location | false | string |
-| timezone | false | Any timezone known to PHP |
-| alarm | false | M = minute, H = hour, D = Day. Format: [integer][D or H or M] |
-| availibility | false | boolean |
+| key | Mandatory | Type | Possible values |
+| --- | --- | --- | --- |
+| title | true | string | Any |
+| startDate | true | timestamp | Any timestamp as excepted by strtotime() |
+| endDate | true | timestamp | Any timestamp as excepted by strtotime() |
+| summary | false | string | Any |
+| description | false | string | /n for new line |
+| location | false | string | Any |
+| timezone | false | timezone | Any timezone known to PHP |
+| alarm | false | string | [integer][D or H or M] (M = minute, H = hour, D = Day) |
+| availibility | false | boolean | true = opaque and out of office, false is transparant and free |
