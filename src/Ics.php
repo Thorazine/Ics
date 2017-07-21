@@ -15,7 +15,7 @@ class Ics {
 	private $title;
 	private $description;
 	private $summary;
-	private $trigger;
+	private $alarm;
 	private $availibility;
 	private $busy;
 	private $id;
@@ -30,7 +30,7 @@ class Ics {
 		$this->summary = @$data['summary'];
 		$this->location = @$data['location'];
 		$this->description = @$data['description'];
-		$this->trigger = @$data['trigger']; // M = minute, H = hour, D = Day. Format: [integer][D or H or M]
+		$this->alarm = @$data['alarm']; // M = minute, H = hour, D = Day. Format: [integer][D or H or M]
 		$this->availibility = (@$data['availibility']) ? $data['availibility'] : false; // 
 
 
@@ -171,11 +171,11 @@ class Ics {
 
 	private function alarm()
 	{
-		if($this->trigger) {
+		if($this->alarm) {
 			$this->ics .= PHP_EOL.'BEGIN:VALARM'.PHP_EOL.
 			'ACTION:DISPLAY'.PHP_EOL.
 			'DESCRIPTION:Kerstborrel'.PHP_EOL.
-			'TRIGGER:-PT'.$this->trigger.PHP_EOL.
+			'TRIGGER:-PT'.$this->alarm.PHP_EOL.
 			'END:VALARM'.PHP_EOL;
 		}
 		return $this;
