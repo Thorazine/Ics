@@ -6,7 +6,7 @@ agenda to import.
 ## Functionality
 - Create stream or get the content
 - Alarm functionality
-- Visibility for Microsoft and others combined to "visibility"
+- Visibility for Microsoft and others combined in ```availiblilty```
 - Title, summary and description are all custom but fallback on title.
 - Start date/end data gets the timezone from Laravel config, but can be overwritten if needed.
 - Set an alarm
